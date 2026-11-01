@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ✏️ EDIT: your name + page description (shows on Google) -->
+  <title>Precious — Freelance Web Designer</title>
+  <meta name="description" content="Precious is a freelance web designer creating thoughtful, distinctive websites for ambitious businesses." />
+  <meta name="theme-color" content="#161616" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Custom cursor (desktop only, controlled by script.js) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Precious, home">
+      <!-- ✏️ EDIT: your brand name -->
+      Precious<span class="dot">.</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-tools">
+      <!-- Theme switcher -->
+      <div class="theme-wrap">
+        <button class="theme-toggle" id="themeToggle" aria-expanded="false" aria-controls="themeMenu" aria-label="Change colour theme">
+          <span class="swatch" aria-hidden="true"></span>
+        </button>
+        <div class="theme-menu" id="themeMenu" role="group" aria-label="Colour themes" hidden>
+          <button data-theme="midnight" aria-pressed="false"><i style="--a:#d4ff3a;--b:#161616"></i>Midnight</button>
+          <button data-theme="ivory" aria-pressed="false"><i style="--a:#e0743a;--b:#f4efe4"></i>Ivory</button>
+          <button data-theme="emerald" aria-pressed="false"><i style="--a:#7dffc0;--b:#0f2a20"></i>Emerald</button>
+          <button data-theme="crimson" aria-pressed="false"><i style="--a:#ff3b4a;--b:#3a0d18"></i>Crimson</button>
+        </div>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="orb" aria-hidden="true"></div>
+      <div class="ring-spin" aria-hidden="true"></div>
+
+      <p class="avail"><span class="pulse" aria-hidden="true"></span>
+        <!-- ✏️ EDIT: change status when you're busy -->
+        Available for new projects
+      </p>
+
+      <h1 class="hero-title" aria-label="We turn ideas into digital experiences.">
+        <span class="line"><span>WE TURN</span></span>
+        <span class="line"><span>IDEAS INTO</span></span>
+        <span class="line"><span class="accent">DIGITAL</span></span>
+        <span class="line"><span>EXPERIENCES.</span></span>
+      </h1>
+
+      <p class="hero-sub reveal">Thoughtful websites. Distinctive design. Better online experiences for ambitious businesses.</p>
+
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#work"><span>Explore My Work</span></a>
+        <a class="btn btn-ghost" href="#contact"><span>Let's Talk</span></a>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Business Websites ✦ Landing Pages ✦ Redesigns ✦ Mobile-First ✦ </span>
+          <span>Business Websites ✦ Landing Pages ✦ Redesigns ✦ Mobile-First ✦ </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section" id="work">
+      <header class="section-head reveal">
+        <p class="eyebrow">01 — Selected Work</p>
+        <h2>PROJECTS</h2>
+      </header>
+
+      <div class="projects">
+
+        <!-- PROJECT 1: EaziCutz -->
+        <article class="project p-wide reveal">
+          <a class="project-media" href="https://prxcious-cd.github.io/eazicutz/" target="_blank" rel="noopener" aria-label="Open EaziCutz demo">
+            <!-- ✏️ EDIT: when you have a screenshot, delete the <div class="ph"> line and use:
+                 <img src="images/eazicutz.jpg" alt="EaziCutz website screenshot" loading="lazy" /> -->
+            <div class="ph" data-label="EaziCutz screenshot"></div>
+            <span class="view">View ↗</span>
+          </a>
+          <div class="project-info">
+            <p class="tag">Barbershop Website</p>
+            <h3>EaziCutz</h3>
+            <p>A professional business website with a strong visual identity.</p>
+            <a class="link" href="https://prxcious-cd.github.io/eazicutz/" target="_blank" rel="noopener">Visit live demo ↗</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Kiddies Wear -->
+        <article class="project p-tall reveal">
+          <!-- ✏️ EDIT: when you have the link, change <span class="link disabled"> to
+               <a class="link" href="YOUR-LINK" target="_blank" rel="noopener">Visit live demo ↗</a> -->
+          <div class="project-media">
+            <div class="ph" data-label="Kiddies Wear screenshot"></div>
+          </div>
+          <div class="project-info">
+            <p class="tag">Online Store</p>
+            <h3>Kiddies Wear &amp; Essentials</h3>
+            <p>A clothing website designed to showcase products and support WhatsApp ordering.</p>
+            <span class="link disabled">Link coming soon</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: The Olive Table (CONCEPT) -->
+        <article class="project p-offset reveal">
+          <!-- ✏️ EDIT: after you build it, swap the disabled span for a real <a class="link"> -->
+          <div class="project-media">
+            <div class="ph" data-label="Olive Table concept"></div>
+            <span class="badge">Concept Project</span>
+          </div>
+          <div class="project-info">
+            <p class="tag">Restaurant Website Concept</p>
+            <h3>THE OLIVE TABLE</h3>
+            <p>An elegant restaurant website concept focused on food presentation and easy navigation. This is a self-initiated concept, not a real client.</p>
+            <span class="link disabled">Link coming soon</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="services">
+      <header class="section-head reveal">
+        <p class="eyebrow">02 — What I Do</p>
+        <h2>SERVICES</h2>
+      </header>
+      <ul class="services">
+        <li class="reveal"><span class="num">01</span><h3>Business Websites</h3><p>Clear, professional sites that present your business properly online.</p></li>
+        <li class="reveal"><span class="num">02</span><h3>Landing Pages</h3><p>Focused single pages built to promote one offer or get enquiries.</p></li>
+        <li class="reveal"><span class="num">03</span><h3>Website Redesigns</h3><p>Fresh design and better structure for sites that feel outdated.</p></li>
+        <li class="reveal"><span class="num">04</span><h3>Mobile-Friendly Design</h3><p>Every site is designed phone-first so it works well on any screen.</p></li>
+      </ul>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <p class="eyebrow reveal">03 — About</p>
+      <h2 class="about-title reveal">GOOD DESIGN ISN'T JUST HOW IT LOOKS. IT'S HOW IT WORKS.</h2>
+      <div class="about-body reveal">
+        <!-- ✏️ EDIT: rewrite this in your own voice -->
+        <p>I'm Precious, a freelance web designer. I enjoy mixing creativity with practical thinking, so a website looks good and also helps a business be found, understood and contacted.</p>
+        <p>I'm building my portfolio project by project, and I'm always open to working with businesses that want a stronger online presence.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <p class="eyebrow reveal">04 — Contact</p>
+      <h2 class="reveal">HAVE SOMETHING IN MIND?</h2>
+
+      <div class="contact-grid">
+        <ul class="contact-links reveal">
+          <!-- ✏️ EDIT: your email -->
+          <li><a href="mailto:hello@example.com">Email <span>hello@example.com</span></a></li>
+          <!-- ✏️ EDIT: WhatsApp with country code, digits only (Nigeria example: 2348012345678) -->
+          <li><a href="https://wa.me/234XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp <span>Message me</span></a></li>
+          <!-- ✏️ EDIT: your Instagram -->
+          <li><a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram <span>@yourhandle</span></a></li>
+        </ul>
+
+        <!-- No backend: this just opens the visitor's email app with a pre-written message -->
+        <!-- ✏️ EDIT: data-email and data-whatsapp must match your details above -->
+        <form class="enquiry reveal" id="enquiry" data-email="hello@example.com" data-whatsapp="234XXXXXXXXXX">
+          <h3>Project enquiry</h3>
+          <label>Your name <input type="text" name="name" required autocomplete="name" /></label>
+          <label>Project type
+            <select name="type">
+              <option>Business website</option>
+              <option>Landing page</option>
+              <option>Website redesign</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Tell me about it <textarea name="message" rows="4" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" data-via="email"><span>Send by email</span></button>
+            <button class="btn btn-ghost" type="submit" data-via="whatsapp"><span>Send on WhatsApp</span></button>
+          </div>
+          <p class="note">This opens your email or WhatsApp app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- ✏️ EDIT: your name -->
+    <p>© <span id="year">2026</span> Precious. Designed &amp; built by hand.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+      </html>
